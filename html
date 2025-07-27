@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalarnas Juristbyrå - Professionell Juridisk Rådgivning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a3c5e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #2e5c8a;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #1a3c5e;
+            border-bottom: 2px solid #2e5c8a;
+            padding-bottom: 10px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #2e5c8a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #1a3c5e;
+        }
+        footer {
+            background-color: #1a3c5e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dalarnas Juristbyrå</h1>
+        <p>Professionell juridisk rådgivning i Dalarna sedan 1995</p>
+    </header>
+
+    <nav>
+        <a href="#om-oss">Om oss</a>
+        <a href="#tjanster">Tjänster</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <div id="om-oss" class="section">
+            <h2>Om oss</h2>
+            <p>Välkommen till Dalarnas Juristbyrå, din lokala partner för juridisk rådgivning i Dalarna. Med över 30 års erfarenhet erbjuder vi kvalificerade juridiska tjänster till både privatpersoner och företag. Vår byrå är baserad i hjärtat av Dalarna och vi är stolta över att bidra med trygghet och expertis till vår region.</p>
+            <p>Vårt team består av engagerade och kvalificerade jurister som arbetar för att ge dig personlig och effektiv service. Vi strävar efter att bygga långsiktiga relationer med våra kunder genom förtroende och professionalism.</p>
+        </div>
+
+        <div id="tjanster" class="section">
+            <h2>Våra tjänster</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Familjerätt</h3>
+                    <p>Vi hjälper dig med äktenskapsförord, testamenten, bodelningar och vårdnadstvister.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Företagsjuridik</h3>
+                    <p>Rådgivning vid bolagsbildning, avtalsskrivning och tvister för små och medelstora företag.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Fastighetsrätt</h3>
+                    <p>Assistance vid köp och försäljning av fastigheter samt hyresavtal.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Arvsrätt</h3>
+                    <p>Planering och hantering av arv, bouppteckningar och arvstvister.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="kontakt" class="section">
+            <h2>Kontakta oss</h2>
+            <p>Har du frågor eller behöver juridisk hjälp? Kontakta oss för en kostnadsfri första konsultation!</p>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Namn</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Meddelande</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+            <p><strong>Adress:</strong> Storgatan 12, 791 71 Falun, Sverige</p>
+            <p><strong>Telefon:</strong> 023-123 45 67</p>
+            <p><strong>E-post:</strong> info@dalarnasjuristbyra.se</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dalarnas Juristbyrå. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+</html>
